@@ -21,3 +21,37 @@ GROUP BY
 ORDER BY 
     total_quantity_sold DESC
 LIMIT 10;
+
+-- customer purchasing
+SELECT
+	CustomerID,
+    COUNT(DISTINCT StockCode) AS distinct_products,
+    SUM(Quantity) AS total_quantity_purchased,
+    SUM(Quantity * UnitPrice) AS total_spent
+FROM 
+	online_retail.retail_data
+GROUP BY 
+	CustomerID
+ORDER BY
+	total_spent DESC
+LIMIT 10;
+
+-- customer finder
+SELECT
+	CustomerID, StockCode, Description, Quantity
+FROM 
+	online_retail.retail_data
+WHERE
+	CustomerID = 12346;
+
+
+-- Stockcode 
+
+SELECT
+	StockCode, Description
+FROM 
+	online_retail.retail_data
+WHERE
+	StockCode = '71053';
+
+

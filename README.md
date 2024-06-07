@@ -2,7 +2,7 @@ This projects seeks to discover trends and patterns in the data to improve sales
 
 Dataset source: https://archive.ics.uci.edu/dataset/352/online+retail
 
-
+# Data Dictionary
 | Variable Name | Role | Type | Description | Units | Missing Values |
 | --- | --- | --- | --- | --- | --- |
 | InvoiceNo | ID | Categorical | a 6-digit integral number uniquely assigned to each transaction | - | no |

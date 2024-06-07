@@ -1,5 +1,6 @@
 This projects seeks to discover trends and patterns in the data to improve sales, investigate customer behavior, and customer demographics.
 
+**Work in Progress**
 
 1.) Data was in a CSV format. Transformed the data from a CSV to SQL using the CSV Lint plugin in notepad++. The converted file was then ran to create the tables and insert the data.
 

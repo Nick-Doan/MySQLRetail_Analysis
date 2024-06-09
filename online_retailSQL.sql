@@ -1,13 +1,24 @@
-SELECT Country,
+
+-- Country total quantity
+SELECT 
+	Country,
        SUM(Quantity) AS TotalQuantity,
        COUNT(DISTINCT InvoiceNo) AS NumInvoices,
        MAX(DISTINCT CustomerID) AS Unique_CustomerID
-FROM online_retail.retail_data
-GROUP BY Country;
+FROM 
+	online_retail.retail_data
+GROUP BY 
+	Country;
 
-
-SELECT StockCode, Quantity UnitPrice, Country, Description
-FROM online_retail.retail_data
+-- exploratory
+SELECT 
+	StockCode,
+	Quantity,
+    UnitPrice,
+	Country,
+    Description
+FROM 
+	online_retail.retail_data
 
 -- Top selling products
 SELECT 
@@ -38,7 +49,9 @@ LIMIT 10;
 
 -- customer finder
 SELECT
-	CustomerID, StockCode, Description, Quantity
+	CustomerID,
+    StockCode, 
+    Description, Quantity
 FROM 
 	online_retail.retail_data
 WHERE
@@ -48,7 +61,8 @@ WHERE
 -- Stockcode 
 
 SELECT
-	StockCode, Description
+	StockCode, 
+    Description
 FROM 
 	online_retail.retail_data
 WHERE

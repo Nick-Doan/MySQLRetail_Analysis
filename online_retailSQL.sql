@@ -33,7 +33,7 @@ ORDER BY
     total_quantity_sold DESC
 LIMIT 10;
 
--- customer purchasing
+-- customer purchasing top 10
 SELECT
 	CustomerID,
     COUNT(DISTINCT StockCode) AS distinct_products,
@@ -68,4 +68,14 @@ FROM
 WHERE
 	StockCode = '71053';
 
-
+-- Stockcode with highest quantity of sales
+SELECT 
+	StockCode,
+    SUM(Quantity * UnitPrice) as total_spent,
+    Description
+FROM
+	online_retail.retail_data
+GROUP BY
+	StockCode, Description
+ORDER BY
+	total_spent DESC

@@ -79,3 +79,17 @@ GROUP BY
 	StockCode, Description
 ORDER BY
 	total_spent DESC
+    
+-- Monthy Sales
+
+SELECT
+	Date_Format(STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i'), '%Y-%m-01') AS Month,
+	SUM(Quantity * UnitPrice) AS Monthly_Sales
+FROM
+	online_retail.retail_data
+GROUP BY
+	Date_Format(STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i'), '%Y-%m-01')
+ORDER BY
+	Month;
+
+

@@ -9,6 +9,7 @@
 
 
 Structured Approach
+
 1.)	defining the problem. 
 
 2.)	Getting the right data.

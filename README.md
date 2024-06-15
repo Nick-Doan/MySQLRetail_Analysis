@@ -7,6 +7,30 @@
 
 2.1) Data was in a CSV format. Transformed the data from a CSV to SQL using the CSV Lint plugin in notepad++. The converted file was then ran to create the tables and insert the data.
 
+
+Structured Approach
+1.)	defining the problem. 
+
+2.)	Getting the right data.
+
+
+3.)	Analysing the data. 
+
+4.)	Evaluating the results. 
+
+5.)	Interpreting the results.
+
+
+6.)	Communicating the results.
+
+7.) Decide.
+
+
+
+
+
+
+
 Dataset source: https://archive.ics.uci.edu/dataset/352/online+retail
 
 # Data Dictionary

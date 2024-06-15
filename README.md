@@ -12,10 +12,13 @@ Structured Approach
 
 1.)	defining the problem. 
 
+
+
 2.)	Getting the right data.
 
 
 3.)	Analysing the data. 
+
 
 4.)	Evaluating the results. 
 

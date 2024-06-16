@@ -92,4 +92,17 @@ GROUP BY
 ORDER BY
 	Month;
 
+-- Quantity and Product
+
+SELECT
+	Description, COUNT(Description) as Quantity_Count
+FROM
+	online_retail.retail_data
+GROUP BY
+	Description
+ORDER BY
+	COUNT(Description) DESC;
+
+
+
 

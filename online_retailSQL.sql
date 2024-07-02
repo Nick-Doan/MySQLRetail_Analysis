@@ -3,6 +3,7 @@
 SELECT 
 	Country,
        SUM(Quantity) AS TotalQuantity,
+       AVG(Quantity) AS AVGQuantity,
        COUNT(DISTINCT InvoiceNo) AS NumInvoices,
        MAX(DISTINCT CustomerID) AS Unique_CustomerID
 FROM 
@@ -16,7 +17,8 @@ SELECT
 	Quantity,
     UnitPrice,
 	Country,
-    Description
+    Description,
+    
 FROM 
 	online_retail.retail_data
 
@@ -103,6 +105,4 @@ GROUP BY
 ORDER BY
 	COUNT(Description) DESC;
 
-
--- Price and Unit_Sales correlation
 

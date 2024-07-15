@@ -105,4 +105,22 @@ GROUP BY
 ORDER BY
 	COUNT(Description) DESC;
 
+-- Best Sales days
+
+SELECT 
+    EXTRACT(MONTH FROM STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i')) AS InvoiceMonth,
+    EXTRACT(DAY FROM STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i')) AS InvoiceDay,
+    EXTRACT(HOUR FROM STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i')) AS InvoiceHour,
+    Description,
+    COUNT(*) AS Quantity_Count
+FROM 
+    online_retail.retail_data
+GROUP BY 
+    InvoiceMonth, InvoiceDay, InvoiceHour, Description
+ORDER BY 
+    Quantity_Count DESC
+LIMIT 10;
+
+
+
 

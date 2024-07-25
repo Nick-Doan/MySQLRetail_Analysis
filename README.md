@@ -3,32 +3,7 @@
 
 1.) This projects seeks to discover trends and patterns in the data to improve sales, investigate customer behavior, and customer demographics.
 
-2.) The data is right for as it is from a reputable source
-
 2.1) Data was in a CSV format. Transformed the data from a CSV to SQL using the CSV Lint plugin in notepad++. The converted file was then ran to create the tables and insert the data.
-
-
-Structured Approach
-
-1.)	defining the problem. 
-
-
-
-2.)	Getting the right data.
-
-
-3.)	Analysing the data. 
-
-
-4.)	Evaluating the results. 
-
-5.)	Interpreting the results.
-
-
-6.)	Communicating the results.
-
-7.) Decide.
-
 
 
 

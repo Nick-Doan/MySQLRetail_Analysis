@@ -8,6 +8,7 @@
 
 
 
+![retail database design](https://github.com/user-attachments/assets/8741e0b5-126e-4ae0-b26b-233747709538)
 
 
 Dataset source: https://archive.ics.uci.edu/dataset/352/online+retail
